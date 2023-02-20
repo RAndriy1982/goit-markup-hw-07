@@ -1,0 +1,243 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* -------------------------HEADER--------------------------- */
+
+  .header-logo {
+    margin-right: 76px;
+  }
+
+  .header-address > .header-list {
+    display: flex;
+    gap: 40px;
+    font-style: normal;
+  }
+
+  .header-contacts {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  /* -------------------------SOLUTIONS-------------------------- */
+
+  .solutions-container {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+
+  .solution-title {
+    margin-bottom: 48px;
+  }
+
+  /* -------------------------FEATURES-------------------------- */
+
+  .features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .features-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .features-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+
+  .features-item-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+
+  .features-item-text {
+    font-weight: 400;
+  }
+
+  .features-wrap {
+    height: 112px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background-color: var(--features-ic-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .features-ic {
+    width: 64px;
+    height: 64px;
+  }
+
+  /* -------------------------PRODUCTS-------------------------- */
+
+  .products {
+    padding-top: 0px;
+    padding-bottom: 120px;
+  }
+
+  .products-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+    color: var(--second-title-color);
+  }
+
+  .products-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .products-item {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+
+  /* -------------------------TEAM-------------------------- */
+
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .team-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .team-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+
+  /* -------------------------CUSTOMERS-------------------------- */
+
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .customers-list {
+    flex-wrap: nowrap;
+  }
+
+  .customers-item {
+    flex-basis: calc((100% - 120px) / 6);
+  }
+
+  /* -------------------------FOOTER-------------------------- */
+
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-container {
+    flex-wrap: nowrap;
+    padding: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .footer-content-wrap {
+    margin-right: 120px;
+  }
+
+  .footer-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: var(--logo-font-size);
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--footer-logo-color);
+  }
+
+  .footer-span-web {
+    color: var(--logo-color);
+  }
+
+  .footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    width: 264px;
+    margin-top: 16px;
+    color: var(--footer-text-color);
+  }
+
+  .footer-definition {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+    color: #ffffff;
+    text-align: left;
+  }
+
+  .footer-social-wrap {
+    margin-right: 80px;
+  }
+
+  .footer-form {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+  }
+
+  .footer-form-wrap {
+    width: 453px;
+    height: 80px;
+    padding: 0;
+  }
+
+  .footer-input {
+    padding: 8px 16px;
+    width: 264px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+  }
+
+  .footer-btn {
+    margin: 0;
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 24px;
+    border: none;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--studio-btn-color);
+    background-color: var(--studio-btn-background-color);
+    cursor: pointer;
+    border-radius: 4px;
+    transition: var(--transition-background-color);
+  }
+
+  .footer-btn:is(:hover, :focus) {
+    background-color: var(--studio-btn-active-background-color);
+  }
+
+  .footer-send-icon {
+    fill: var(--studio-btn-color);
+  }
+}

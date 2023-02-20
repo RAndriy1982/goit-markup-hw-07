@@ -1,0 +1,226 @@
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* -------------------------HEADER--------------------------- */
+
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .header-container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .header-navigation {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+    color: var(--nav-defolt-color);
+  }
+
+  .header-logo {
+    margin-right: 120px;
+  }
+
+  .header-address {
+    font-style: normal;
+    display: block;
+  }
+
+  .header-address > .header-list {
+    display: block;
+  }
+
+  .header-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-link.active {
+    color: var(--page-active-color);
+    position: relative;
+  }
+
+  .active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--underline-color);
+    left: 0;
+    bottom: 0;
+  }
+
+  .header-link {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 24px 0;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: inherit;
+    transition: var(--transition-color);
+  }
+
+  .header-link:hover,
+  .header-link:focus {
+    color: var(--accent-color);
+  }
+
+  .header-contacts {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: inherit;
+    transition: var(--transition-color);
+  }
+
+  .header-contacts:hover,
+  .header-contacts:focus {
+    color: var(--accent-color);
+  }
+
+  .header-menu-btn {
+    display: none;
+  }
+
+  /* -------------------------SOLUTIONS-------------------------- */
+
+  .solutions {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/solutions-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .solutions {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/solutions-bg-2x.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .solutions-container {
+    padding-bottom: 108px;
+  }
+
+  .solution-title {
+    font-size: 56px;
+    line-height: 1.07;
+    width: 496px;
+    margin-bottom: 40px;
+  }
+
+  /* -------------------------FEATURES-------------------------- */
+
+  @media screen and (max-width: 1199px) {
+    .features-list {
+      display: flex;
+      column-gap: 24px;
+      row-gap: 72px;
+      flex-wrap: wrap;
+    }
+  }
+
+  .features-list {
+    display: flex;
+    column-gap: 24px;
+    row-gap: 72px;
+    flex-wrap: wrap;
+  }
+
+  .features-item {
+    flex-basis: calc((100% - 24px) / 2);
+    min-height: 120px;
+  }
+
+  /* -------------------------TEAM-------------------------- */
+
+  @media screen and (max-width: 1199px) {
+    .team-list {
+      display: flex;
+      justify-content: center;
+      column-gap: 24px;
+      row-gap: 64px;
+      flex-wrap: wrap;
+    }
+
+    .team-item {
+      flex-basis: calc((100% - 24px) / 2);
+    }
+  }
+
+  /* -------------------------CUSTOMERS-------------------------- */
+
+  .customers-item {
+    flex-basis: calc((100% - 32px) / 3);
+    height: 88px;
+  }
+
+  .customers-logo {
+    width: 104px;
+  }
+
+  /* -------------------------FOOTER-------------------------- */
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer-content-wrap {
+    min-width: 264px;
+    display: block;
+  }
+
+  .footer-social-wrap {
+    width: 208px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer-definition {
+      text-align: left;
+    }
+
+    .footer-container {
+      padding: 96px 108px;
+      column-gap: 24px;
+      row-gap: 72px;
+    }
+
+    .footer-form {
+      display: flex;
+      flex-direction: row;
+      column-gap: 24px;
+    }
+  }
+
+  .footer-input {
+    width: 264px;
+  }
+
+  /* -------------------------MODAL-------------------------- */
+
+  .modal {
+    width: 408px;
+    padding: 72px 24px 24px;
+  }
+}
