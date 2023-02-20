@@ -19,6 +19,9 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
 
   <body>
@@ -54,6 +57,83 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="header-menu-btn" data-menu-open>
+          <svg class="menu-open">
+            <use href="./images/icons.svg#icon-menu-open"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <button type="button" class="mob-menu-btn" data-menu-close>
+          <svg class="menu-close">
+            <use href="./images/icons.svg#menu-icon-close"></use>
+          </svg>
+        </button>
+        <div>
+          <nav class="mob-menu-navigation">
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a href="./index.html" class="mob-menu-link link active"
+                  >Studio</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a href="./portfolio.html" class="mob-menu-link link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a href="" class="mob-menu-link link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <address class="mob-menu-address">
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a href="tel:+110001111111" class="mob-menu-tel link">
+                  +11 (000) 111-11-11
+                </a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="mailto:info@devstudio.com" class="mob-menu-mail link">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-menu-social-list list">
+            <li class="mob-menue-social-item">
+              <a href="" class="mob-menue-social-link link">
+                <svg class="mob-menu-sc-ic">
+                  <use href="./images/icons.svg#icon-instagram-mob"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menue-social-item">
+              <a href="" class="mob-menue-social-link link">
+                <svg class="mob-menu-sc-ic">
+                  <use href="./images/icons.svg#icon-twitter-mob"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menue-social-item">
+              <a href="" class="mob-menue-social-link link">
+                <svg class="mob-menu-sc-ic">
+                  <use href="./images/icons.svg#icon-facebook-mob"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menue-social-item">
+              <a href="" class="mob-menue-social-link link">
+                <svg class="mob-menu-sc-ic">
+                  <use href="./images/icons.svg#icon-linkedin-mob"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -79,9 +159,8 @@
               </div>
               <h3 class="features-item-title">Strategy</h3>
               <p class="features-item-text">
-                Our goal is to identify the business<br />
-                problem to walk away with the<br />
-                perfect and creative solution.
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
               </p>
             </li>
 
@@ -93,8 +172,7 @@
               </div>
               <h3 class="features-item-title">Punctuality</h3>
               <p class="features-item-text">
-                Bring the key message to the<br />
-                brand's audience for the best price<br />
+                Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
@@ -107,9 +185,8 @@
               </div>
               <h3 class="features-item-title">Diligence</h3>
               <p class="features-item-text">
-                Research and confirm brands that<br />
-                present the strongest digital growth<br />
-                opportunities and minimize risk.
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
               </p>
             </li>
 
@@ -121,9 +198,8 @@
               </div>
               <h3 class="features-item-title">Technologies</h3>
               <p class="features-item-text">
-                Design practice focused on digital<br />
-                experiences. We bring forth a deep<br />
-                passion for problem-solving.
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
               </p>
             </li>
           </ul>
@@ -162,11 +238,12 @@
       </section>
 
       <section class="team">
-        <div class="container">
+        <div class="container container-mini container-medium">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
               <img
+                srcset="./images/photo-1.jpg 1x, ./images/photo-1-2x.jpg 2x"
                 src="./images/photo-1.jpg"
                 width="264"
                 height="260"
@@ -209,6 +286,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/photo-2.jpg 1x, ./images/photo-2-2x.jpg 2x"
                 src="./images/photo-2.jpg"
                 width="264"
                 height="260"
@@ -251,6 +329,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/photo-3.jpg 1x, ./images/photo-3-2x.jpg 2x"
                 src="./images/photo-3.jpg"
                 width="264"
                 height="260"
@@ -293,6 +372,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/photo-4.jpg 1x, ./images/photo-4-2x.jpg 2x"
                 src="./images/photo-4.jpg"
                 width="264"
                 height="260"
@@ -435,10 +515,11 @@
           <p class="footer-definition">Subscribe</p>
           <form class="footer-form">
             <input class="footer-input" type="email" placeholder="E-mail" />
-            <button class="footer-btn" type="submit">Subscribe
-                <svg class="footer-send-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
+            <button class="footer-btn" type="submit">
+              Subscribe
+              <svg class="footer-send-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
             </button>
           </form>
         </div>
@@ -526,5 +607,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
