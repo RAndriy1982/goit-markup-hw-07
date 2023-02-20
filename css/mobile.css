@@ -6,13 +6,12 @@
   }
 
   .solutions {
+    max-width: 768px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/solutions-bg-tab.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -24,8 +23,10 @@
           rgba(46, 47, 66, 0.7)
         ),
         url(../images/solutions-bg-tab-2x.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
     }
+  }
+
+  .solution-title {
+    width: 320px;
   }
 }

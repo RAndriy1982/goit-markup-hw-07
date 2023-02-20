@@ -301,6 +301,7 @@ img {
 /* -------------------------SOLUTIONS-------------------------- */
 
 .solutions {
+  max-width: 428px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -334,7 +335,6 @@ img {
 .solution-title {
   font-size: 36px;
   line-height: 1.11;
-  width: 320px;
   margin-bottom: 72px;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
@@ -343,6 +343,12 @@ img {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+@media screen and (max-width: 479px) {
+  .solution-title {
+    max-width: 320px;
+  }
 }
 
 .solution-btn {
@@ -533,7 +539,6 @@ img {
 .customers {
   padding-top: 96px;
   padding-bottom: 96px;
-  background-color: var(--customers-background-color);
 }
 
 .customers-list {
@@ -872,7 +877,7 @@ img {
 }
 
 .modal {
-  width: 392px;
+  max-width: 392px;
   min-height: 586px;
   border-radius: 4px;
   padding: 72px 16px 24px;
